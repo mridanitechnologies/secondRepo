@@ -8,7 +8,7 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building..'
-                sh 'mvn --settings /jetn/app/tools/apache-maven-3.0.4/conf/serviceaccount_jenkinsgithub-settings.xml clean'
+                sh 'mvn --settings /jetn/app/tools/apache-maven-3.0.4/conf/serviceaccount_jenkinsgithub-settings.xml -U clean'
             }
         }
         stage('Test') {

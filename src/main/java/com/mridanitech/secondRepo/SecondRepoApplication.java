@@ -7,6 +7,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class SecondRepoApplication {
 
 	public static void main(String[] args) {
+		System.out.println("WORLD");
 		SpringApplication.run(SecondRepoApplication.class, args);
 	}
 
